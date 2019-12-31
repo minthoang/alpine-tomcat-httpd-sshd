@@ -9,7 +9,11 @@ pipeline {
 
       }
     }
-
+  stage('Test') {
+            steps {
+                sh 'docker images'
+            }
+        }
   }
   environment {
     registry = 'minthoang/alpine-tomcat-httpd-sshd'

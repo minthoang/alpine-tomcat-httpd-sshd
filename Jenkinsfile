@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'cat /etc/os-release'
+        sh '''docker info
+'''
       }
     }
 

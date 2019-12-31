@@ -12,6 +12,7 @@ pipeline {
   stage('Test') {
             steps {
                 sh 'docker images'
+                sh 'docker ps -a'
             }
         }
   }
